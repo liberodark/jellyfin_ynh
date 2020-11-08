@@ -1,0 +1,14 @@
+[Unit]
+Description=Jellyfin Media Server
+After=network.target
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+ExecStart=/usr/bin/jellyfin
+Restat=on-failure
+Timoutsec=15
+
+[Install]
+WantedBy=multi-user.target
