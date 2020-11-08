@@ -126,6 +126,7 @@ ynh_replace_string --match_string="<HttpServerPortNumber>8096</HttpServerPortNum
 # Set permissions to app files
 chown -R $app: $final_path
 chown -R $app: /var/lib/jellyfin
+chown -R $app: /usr/bin/jellyfin
 
 #=================================================
 # SETUP LOGROTATE
